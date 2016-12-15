@@ -36,4 +36,17 @@ function MasterCtrl($scope, $cookieStore) {
     window.onresize = function() {
         $scope.$apply();
     };
+
+    /**
+     * Menu Dinamic
+     */
+    $scope.menu_list = [{
+      'name': 'Dashboard',
+      'icon': 'fa-tachometer',
+      'href': ''
+    },{
+      'name': 'Tables',
+      'icon': 'fa-table',
+      'href': '#/tables'
+    }];
 }
