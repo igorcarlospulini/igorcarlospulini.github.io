@@ -1,0 +1,52 @@
+<div data-ng-controller="CompletoCtrl">
+
+    <div class="row" >
+        <div class="col-xs-12">
+            <label>Linha:</label>
+            <select ng-model="selectLinha"
+            data-ng-options="value.Linha as value.Linha for value in dados.distribuicao | unique:'Linha' | orderBy:'Linha'">
+            <option value="" ng-selected="selected">Selecione...</option>
+            </select>
+
+            <label>Recurso:</label>
+            <select ng-model="selectRecurso"
+            data-ng-options="value.Recurso as value.Recurso for value in dados.distribuicao | filter: selectLinha | unique:'Recurso'">
+            <option value="" ng-selected="selected">Selecione...</option>
+            </select>
+            <div class="user pull-right">
+                <button class="btn btn-info" type='button' ng-click='gerarPDF()'>Gerar PDF</button>
+            </ddiv>
+
+        </div>
+    </div>
+
+<br>
+
+<div class="row">
+    <div class="col-xs-12" id="tabela">
+        <table class="table table-striped custab">
+            <thead>
+                <tr>
+                    <th>Linha</th>
+                    <th>Recurso</th>
+                    <th>Operação</th>
+                    <th>Job</th>
+                    <th>Tarefa</th>
+                    <th>Início</th>
+                    <th>Fim</th>
+                </tr>
+            </thead>
+            <tr ng-repeat="d in dados.distribuicao | filter: selectLinha | filter: selectRecurso">
+                <td>{{d.Linha}}</td>
+                <td>{{d.Recurso}}</td>
+                <td>{{d.IdOperacao}}</td>
+                <td>{{d.Job}}</td>
+                <td>{{d.Tarefa}}</td>
+                <td>{{d.Inicio}}</td>
+                <td>{{d.Fim}}</td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+</div>

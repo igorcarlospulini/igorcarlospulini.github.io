@@ -4,13 +4,41 @@
 
 @base: #2d3e63;
 
-h1, h2, h3, h4, h5, h6, p, select, input, li, a, .btn {
+h1, h2, h3, h4, h5, h6, p, select, input, li, a, .btn, label {
   font-family: 'Lato', sans-serif !important;
 }
 
 .btn {
   text-transform: uppercase;
   font-size: 12px;
+}
+
+select {
+    height: 30px;
+    min-width: 200px;
+    margin-right: 20px;
+}
+
+label {
+    text-transform: uppercase;
+}
+
+.table {
+    thead {
+        tr {
+            th {
+                text-transform: uppercase;
+                font-size: 13px;
+                font-weight: 300;
+            }
+        }
+    }
+    tr {
+        td {
+            font-weight: 100;
+            font-size: 11px;
+        }
+    }
 }
 
 #content-wrapper {
@@ -30,6 +58,13 @@ h1, h2, h3, h4, h5, h6, p, select, input, li, a, .btn {
     margin-right: 10px;
     margin-top: 12px;
     position:relative;
+}
+.btn-bs-file {
+    border: 1px solid #AAA;
+    color: #222;
+    &:hover {
+        background: #EEE;
+    }
 }
 .btn-bs-file input[type="file"]{
     position: absolute;

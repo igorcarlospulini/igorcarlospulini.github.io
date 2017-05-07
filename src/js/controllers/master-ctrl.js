@@ -1,5 +1,5 @@
 angular.module('RDash')
-    .controller('MasterCtrl', ['$scope', '$cookieStore', 'DataService', MasterCtrl]);
+.controller('MasterCtrl', ['$scope', '$cookieStore', 'DataService', MasterCtrl]);
 
 function MasterCtrl($scope, $cookieStore, DataService) {
 
@@ -36,27 +36,31 @@ function MasterCtrl($scope, $cookieStore, DataService) {
     };
 
     /**
-     * Menu Dinamic
-     */
-     $scope.menu_list = [{
-     'name': 'Arquivo',
-     'icon': 'fa-upload',
-     'href': ''
-   },{
-     'name': 'Timeline',
-     'icon': 'fa-bar-chart',
-     'href': '#/linhas'
-   },{
-     'name': 'Linhas',
-     'icon': 'fa-clock-o',
-     'href': '#/tempos'
-   },{
-     'name': 'Máquinas',
-     'icon': 'fa-area-chart',
-     'href': '#/maquinas'
-   },{
-     'name': 'Evolução',
-     'icon': 'fa-line-chart',
-     'href': '#/evolucao'
-   }];
+    * Menu Dinamic
+    */
+    $scope.menu_list = [{
+        'name': 'Arquivo',
+        'icon': 'fa-upload',
+        'href': ''
+    },{
+        'name': 'Resumo',
+        'icon': 'fa-bookmark',
+        'href': '#/resumo'
+    },{
+        'name': 'Completo',
+        'icon': 'fa-bookmark-o',
+        'href': '#/completo'
+    },{
+        'name': 'Linhas',
+        'icon': 'fa-clock-o',
+        'href': '#/linhas'
+    },{
+        'name': 'Máquinas',
+        'icon': 'fa-area-chart',
+        'href': '#/maquinas'
+    },{
+        'name': 'Evolução',
+        'icon': 'fa-line-chart',
+        'href': '#/evolucao'
+    }];
 }
