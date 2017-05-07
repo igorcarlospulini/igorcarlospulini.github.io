@@ -1,23 +1,26 @@
 'use strict';
 
-/**
- * Route configuration for the RDash module.
- */
 angular.module('RDash').config(['$stateProvider', '$urlRouterProvider',
     function($stateProvider, $urlRouterProvider) {
 
-        // For unmatched routes
         $urlRouterProvider.otherwise('/');
 
-        // Application routes
         $stateProvider
             .state('index', {
                 url: '/',
-                templateUrl: 'templates/dashboard.html'
+                templateUrl: 'templates/arquivo.html'
             })
-            .state('tables', {
-                url: '/tables',
-                templateUrl: 'templates/tables.html'
+            .state('evolucao', {
+                url: '/evolucao',
+                templateUrl: 'templates/evolucao.html'
+            })
+            .state('maquinas', {
+                url: '/maquinas',
+                templateUrl: 'templates/maquinas.html'
+            })
+            .state('linhas', {
+                url: '/linhas',
+                templateUrl: 'templates/linhas.html'
             });
     }
 ]);

@@ -17,9 +17,15 @@
   <script type="text/javascript" src="components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
   <script type="text/javascript" src="components/angular-cookies/angular-cookies.min.js"></script>
   <script type="text/javascript" src="components/angular-ui-router/release/angular-ui-router.min.js"></script>
+  <script type="text/javascript" src="components/js-xlsx/dist/xlsx.full.min.js"></script>
+  <script type="text/javascript" src="components/xlsx-model/xlsx-model.js"></script>
+  <script type="text/javascript" src="components/angular-file-model/angular-file-model.js"></script>
+  <script type="text/javascript" src="components/google-charts/loader.js"></script>
+
   <!-- endbuild -->
   <!-- Custom Scripts -->
   <script type="text/javascript" src="js/dashboard.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/custom.css">
 </head>
 <body ng-controller="MasterCtrl">
   <div id="page-wrapper" ng-class="{'open': toggle}" ng-cloak>
@@ -29,7 +35,7 @@
       <ul class="sidebar">
         <li class="sidebar-main">
           <a ng-click="toggleSidebar()">
-            Dashboard
+            Painel
             <span class="menu-icon glyphicon glyphicon-transfer"></span>
           </a>
         </li>
@@ -64,12 +70,20 @@
         <!-- Header Bar -->
         <div class="row header">
           <div class="col-xs-12">
+            <div class="user pull-right">
+              <label class="btn-bs-file btn">
+                Arquivo
+                <input type="file" file-model='fileModel' xlsx-model='excel' />
+              </label>
+              <button class="btn btn-upload btn-primary" type='button' ng-click='upload()'>Carregar</button>
+
+            </div>
             <div class="meta">
               <div class="page">
-                Dashboard
+                Igor Carlos Pulini
               </div>
               <div class="breadcrumb-links">
-                Home / Dashboard
+                IFES / UFRGS
               </div>
             </div>
           </div>

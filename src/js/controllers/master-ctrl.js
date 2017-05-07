@@ -1,14 +1,12 @@
-/**
- * Master Controller
- */
-
 angular.module('RDash')
-    .controller('MasterCtrl', ['$scope', '$cookieStore', MasterCtrl]);
+    .controller('MasterCtrl', ['$scope', '$cookieStore', 'DataService', MasterCtrl]);
 
-function MasterCtrl($scope, $cookieStore) {
-    /**
-     * Sidebar Toggle & Cookie Control
-     */
+function MasterCtrl($scope, $cookieStore, DataService) {
+
+    $scope.upload = function () {
+        DataService.setItem($scope.excel);
+    }
+
     var mobileView = 992;
 
     $scope.getWidth = function() {
@@ -40,13 +38,25 @@ function MasterCtrl($scope, $cookieStore) {
     /**
      * Menu Dinamic
      */
-    $scope.menu_list = [{
-      'name': 'Dashboard',
-      'icon': 'fa-tachometer',
-      'href': ''
-    },{
-      'name': 'Tables',
-      'icon': 'fa-table',
-      'href': '#/tables'
-    }];
+     $scope.menu_list = [{
+     'name': 'Arquivo',
+     'icon': 'fa-upload',
+     'href': ''
+   },{
+     'name': 'Timeline',
+     'icon': 'fa-bar-chart',
+     'href': '#/linhas'
+   },{
+     'name': 'Linhas',
+     'icon': 'fa-clock-o',
+     'href': '#/tempos'
+   },{
+     'name': 'Máquinas',
+     'icon': 'fa-area-chart',
+     'href': '#/maquinas'
+   },{
+     'name': 'Evolução',
+     'icon': 'fa-line-chart',
+     'href': '#/evolucao'
+   }];
 }
