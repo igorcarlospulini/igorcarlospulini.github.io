@@ -46,7 +46,6 @@ function desenharPieMaquina(dados) {
         var options = {
             title: 'Gráfico: Porcentagem de trabalho na Linha de Produção',
             height: 400,
-            colors: ['#0d3e63', '#9f9f9f'],
             legend: { position: 'top', maxLines: 3 },
             pieSliceTextStyle: {
                 fontName: 'Lato',
@@ -91,7 +90,6 @@ function desenharColumnMaquina(dados) {
                 height: 400,
                 isStacked: true,
                 fontName: 'Lato',
-                colors: ['#0d3e63', '#9f9f9f'],
                 fontSize: 12,
                 legend: { position: 'top', maxLines: 3 },
                 bar: { groupWidth: '50  %' },

@@ -16,8 +16,14 @@ function CompletoCtrl($scope, DataService) {
     });
 
     $scope.gerarPDF = function () {
-        // Gerar PDF
-         
-    });
 
+        decisao = confirm("Desejar gerar PDF?");
+        if (decisao){
+            kendo.drawing.drawDOM($("#tabela")).then(function(group) {
+                kendo.drawing.pdf.saveAs(group, "pdf.pdf");
+            });
+            alert("Arquivo gerado com sucesso!");
+        }
+
+    };
 }

@@ -58,7 +58,6 @@ function desenharMaquinas(dados) {
             fontName: 'Lato',
             fontSize: 14,
             legend: { position: 'top', maxLines: 3 },
-            colors: ['#0d3e63', '#9f9f9f'],
             legendTextStyle: {
                 fontName: 'Lato',
                 fontSize: 12

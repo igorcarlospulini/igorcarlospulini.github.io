@@ -44,7 +44,6 @@ function desenharLinhas(dados) {
             height: linhas.length * 80,
             fontName: 'Lato',
             fontSize: 12,
-            colors: ['#0d3e63', '#9f9f9f', "#333"],
             legend: { position: 'top', maxLines: 3 },
             legendTextStyle: {
                 fontName: 'Lato',
