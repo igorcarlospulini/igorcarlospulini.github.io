@@ -12,7 +12,7 @@ $scope.$watch($scope.dados, function(newValue, oldValue) {
     //desenharEvolucao($scope.dados);
 
     angular.forEach($scope.dados.evolucao, function(value, key) {
-            desenharEvolucao(value, key);
+        desenharEvolucao(value, value.Geracao);
     });
 
 });
@@ -38,14 +38,14 @@ function drawBasic() {
 
     var options = {
         hAxis: {
-            title: 'Time'
+            title: 'Geração'
         },
         vAxis: {
-            title: 'Popularity'
+            title: name
         }
     };
 
-    var chart = new google.visualization.LineChart(document.getElementById('evolucao'+name));
+    var chart = new google.visualization.LineChart(document.getElementById('chart-'+name));
     chart.draw(data, options);
 }
 }

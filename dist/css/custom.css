@@ -1,0 +1,85 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700,900);
+@import url(http://fonts.googleapis.com/css?family=Raleway:300,400,700,900);
+@import url(http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:300,400,700,900);
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+select,
+input,
+li,
+a,
+.btn,
+label {
+  font-family: 'Lato', sans-serif !important;
+}
+.btn {
+  text-transform: uppercase;
+  font-size: 12px;
+}
+select {
+  height: 30px;
+  min-width: 200px;
+  margin-right: 20px;
+}
+label {
+  text-transform: uppercase;
+}
+.table thead tr th {
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 300;
+}
+.table tr td {
+  font-weight: 100;
+  font-size: 11px;
+}
+#content-wrapper .page-content .header {
+  box-shadow: 2px 2px 6px #AAA;
+  background: #FFF;
+}
+#content-wrapper .page-content .header .page {
+  text-transform: uppercase;
+  font-size: 14px;
+}
+.btn-bs-file,
+.btn-upload {
+  margin-right: 10px;
+  margin-top: 12px;
+  position: relative;
+}
+.btn-bs-file {
+  border: 1px solid #AAA;
+  color: #222;
+}
+.btn-bs-file:hover {
+  background: #EEE;
+}
+.btn-bs-file input[type="file"] {
+  position: absolute;
+  top: -9999999;
+  filter: alpha(opacity=0);
+  opacity: 0;
+  width: 0;
+  height: 0;
+  outline: none;
+  cursor: inherit;
+}
+/* =============================================================================
+** Panel
+==============================================================================*/
+.panel .panel-heading {
+  background: #2d3e63;
+  border-radius: 0;
+  color: white;
+  font-size: 10px;
+  text-transform: uppercase;
+}
+.panel .panel-body {
+  border-radius: 0;
+  font-size: 14px;
+  box-shadow: 1px 1px 4px #AAA;
+}
