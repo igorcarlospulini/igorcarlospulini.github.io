@@ -1,51 +1,52 @@
-angular.module('RDash').controller('EvolucaoCtrl', ['$scope', 'DataService', EvolucaoCtrl])
+angular.module('RDash').directive('repeatDone', function() {
+  return function(scope, element, attrs) {
+      desenharEvolucao(scope.d, scope.d.Geracao);
+  }
+});
 
+angular.module('RDash').controller('EvolucaoCtrl', ['$scope', 'DataService', EvolucaoCtrl])
 function EvolucaoCtrl($scope, DataService) {
 
-$scope.dados = function() {
-    return DataService.getItem();
-};
+    $scope.dados = function() {
+        return DataService.getItem();
+    };
 
-$scope.$watch($scope.dados, function(newValue, oldValue) {
-
-    $scope.dados = DataService.getItem();
-    //desenharEvolucao($scope.dados);
-
-    angular.forEach($scope.dados.evolucao, function(value, key) {
-        desenharEvolucao(value, value.Geracao);
+    $scope.$watch($scope.dados, function(newValue, oldValue) {
+        $scope.dados = DataService.getItem();
     });
-
-});
 
 }
 
 function desenharEvolucao(value, name) {
 
-google.charts.load('current', {packages: ['corechart', 'line']});
-google.charts.setOnLoadCallback(drawBasic);
+    google.charts.load('current', {'packages':['corechart']});
+    google.charts.setOnLoadCallback(drawChart);
 
-function drawBasic() {
+    //console.log(name);
 
-    var data = new google.visualization.DataTable();
-    data.addColumn('number', 'Intervalo');
-    data.addColumn('number', 'Valor');
+    function drawChart() {
 
-    var i = 0;
+        var data = new google.visualization.DataTable();
+        data.addColumn('number', 'Intervalo');
+        data.addColumn('number', 'Valor');
 
-    angular.forEach(value, function(v, k) {
-        data.addRow([i++, parseFloat(v)]);
-    });
+        var i = 1;
 
-    var options = {
-        hAxis: {
-            title: 'Geração'
-        },
-        vAxis: {
-            title: name
-        }
-    };
+        angular.forEach(value, function(v, k) {
+            data.addRow([i++, parseFloat(v)]);
+        });
 
-    var chart = new google.visualization.LineChart(document.getElementById('chart-'+name));
-    chart.draw(data, options);
-}
+        var options = {
+            hAxis: {
+                title: 'Geração'
+            },
+            vAxis: {
+                title: name
+            }
+        };
+
+        var chart = new google.visualization.LineChart(document.getElementById('chart-'+name));
+        chart.draw(data, options);
+        
+    }
 }

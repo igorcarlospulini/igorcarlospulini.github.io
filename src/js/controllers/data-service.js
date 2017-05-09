@@ -13,6 +13,8 @@ function DataService() {
   };
 }
 
+
+
 function useMaquina(idLinha, dados) {
 
   var maquinas = [];
