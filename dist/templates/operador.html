@@ -5,12 +5,6 @@
       <select ng-model="selectLinha" ng-change="changedValue(selectLinha)" data-ng-options="value.Linha as value.Linha for value in dados.distribuicao | unique:'Linha' | orderBy:'Linha'">
       <option value="" ng-selected="selected">Selecione...</option>
       </select>
-
-    <label>Operador: </label>
-    <select ng-model="selectOperador" ng-change="changedValueOperador(selectOperador, selectLinha)" data-ng-options="value.Operador as value.Operador for value in dados.distribuicao | filter: selectLinha | unique:'Operador'">
-    <option value="" ng-selected="selected">Selecione...</option>
-    </select>
-
   </div>
 </div>
 

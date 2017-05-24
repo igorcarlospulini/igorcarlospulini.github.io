@@ -12,21 +12,13 @@ function OperadorCtrl($scope, DataService) {
 
       $scope.changedValue = function (id){
           desenharTimelineLinha(id, $scope.dados);
-
-          var myEl = angular.element( document.querySelector( '#timeline-chart-operador' ) );
-          myEl.empty();
-          $scope.selectOperador = 0;
-
-      }
-
-      $scope.changedValueOperador = function (operador, linha) {
-          desenharTimelineOperador(linha, operador, $scope.dados);
+          desenharTimelineOperador(id, $scope.dados);
       }
   });
 
 }
 
-function desenharTimelineOperador(idLinha, idOperador, dados) {
+function desenharTimelineOperador(idLinha, dados) {
 
   google.charts.load("current", {packages:["timeline"], 'callback': drawTimeline});
   google.charts.setOnLoadCallback(drawTimeline);
@@ -44,7 +36,7 @@ function desenharTimelineOperador(idLinha, idOperador, dados) {
       dataTable.addColumn({ type: 'date', id: 'Fim' });
 
       angular.forEach(dados.distribuicao, function(value, key) {
-          if (value.Linha == idLinha && value.Operador == idOperador)
+          if (value.Linha == idLinha)
             dataTable.addRow([
                 value.Operador ,
                 'Job ' + value.Job,
