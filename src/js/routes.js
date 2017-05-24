@@ -10,6 +10,10 @@ angular.module('RDash').config(['$stateProvider', '$urlRouterProvider',
                 url: '/',
                 templateUrl: 'templates/arquivo.html'
             })
+            .state('operador', {
+                url: '/operador',
+                templateUrl: 'templates/operador.html'
+            })
             .state('evolucao', {
                 url: '/evolucao',
                 templateUrl: 'templates/evolucao.html'

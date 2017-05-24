@@ -130,8 +130,12 @@ function desenharColumnMaquina(dados) {
 
             angular.forEach(dados.distribuicao, function(value, key) {
                 if (value.Linha == idLinha)
-                dataTable.addRow([ value.Recurso, 'Job ' + value.Job,
-                'Tarefa ' + value.Tarefa, new Date(0,0,0,0,value.Inicio, 0),  new Date(0,0,0,0,value.Fim, 0)]);
+                dataTable.addRow([
+                    value.Recurso,
+                    'Job ' + value.Job,
+                    'Tarefa ' + value.Tarefa,
+                    new Date(0,0,0,0,value.Inicio, 0),
+                    new Date(0,0,0,0,value.Fim, 0)]);
             });
 
             var qtd = uniqueArrayValue(dados.distribuicao, 'Linha', idLinha, 'Recurso');

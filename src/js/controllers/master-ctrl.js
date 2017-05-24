@@ -43,6 +43,10 @@ function MasterCtrl($scope, $cookieStore, DataService) {
         'icon': 'fa-upload',
         'href': ''
     },{
+        'name': 'Operador',
+        'icon': 'fa-bookmark',
+        'href': '#/operador'
+    },{
         'name': 'Resumo',
         'icon': 'fa-bookmark',
         'href': '#/resumo'
