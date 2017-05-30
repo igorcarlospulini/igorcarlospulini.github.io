@@ -44,15 +44,14 @@
       </div>
 
       <div class="col-xs-8">
-        <div class="row" ng-repeat="n in dados.operadoreslinhas | filter: selectLinha
-          | filter: n.Operador">
+        <div class="row" ng-repeat="n in dados.operadoreslinhas | filter: { Linha : n.Linha, Operador : n.Operador}">
           <div class="col-xs-4 no-spacing">
               {{n.Recurso}}
           </div>
           <div class="col-xs-6 no-spacing">
             <div class="progress">
               <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: {{n.PRecurso}}%">
-                {{n.PRecurso}}
+                {{n.PRecurso}}%
               </div>
             </div>
           </div>
