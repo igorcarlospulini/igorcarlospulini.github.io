@@ -40,11 +40,11 @@
 
       <div class="col-xs-3 desenho">
           <p>Operador {{n.Operador}}</p>
-          <img src="/dist/img/desenho.png" alt="">
+          <img src="/img/desenho.png" alt="">
       </div>
 
       <div class="col-xs-8">
-        <div class="row" ng-repeat="n in dados.operadoreslinhas | filter: { Linha : n.Linha, Operador : n.Operador}">
+        <div class="row" ng-repeat="n in dados.operadoreslinhas | filter: { LinhaOperador : (n.Linha + n.Operador + '-')}">
           <div class="col-xs-4 no-spacing">
               {{n.Recurso}}
           </div>
