@@ -104,6 +104,7 @@ label {
 .list-operador .panel-operador {
   border-top: 1px solid #ccc;
   padding-top: 30px;
+  border-right: 1px solid #AAA;
 }
 .list-operador .desenho img {
   padding-top: 10px;

@@ -28,6 +28,7 @@
             <thead>
                 <tr>
                     <th>Linha</th>
+                    <th>Operador</th>
                     <th>Recurso</th>
                     <th>Operação</th>
                     <th>Job</th>
@@ -38,6 +39,7 @@
             </thead>
             <tr ng-repeat="d in dados.distribuicao | filter: selectLinha | filter: selectRecurso">
                 <td>{{d.Linha}}</td>
+                <td>{{d.Operador}}</td>
                 <td>{{d.Recurso}}</td>
                 <td>{{d.IdOperacao}}</td>
                 <td>{{d.Job}}</td>

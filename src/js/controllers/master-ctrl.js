@@ -47,10 +47,6 @@ function MasterCtrl($scope, $cookieStore, DataService) {
         'icon': 'fa-bookmark',
         'href': '#/operador'
     },{
-        'name': 'Resumo',
-        'icon': 'fa-bookmark',
-        'href': '#/resumo'
-    },{
         'name': 'Completo',
         'icon': 'fa-bookmark-o',
         'href': '#/completo'

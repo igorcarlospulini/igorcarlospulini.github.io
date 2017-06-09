@@ -23,25 +23,27 @@ function desenharLinhas(dados) {
     function drawChart() {
 
 
-        var dataarray = [['Utilização', 'Total', 'Ocupado', 'Ocioso']];
+        var dataarray = [['Utilização', 'Tempo']];
         var linhas = uniqueArray(dados.distribuicao, 'Linha');
+        var qtd = 0;
 
         angular.forEach(linhas, function(value, key) {
-            var maquinas = useMaquina(value.Linha, dados);
-
-            var trabalho = 0, ocioso = 0;
-            angular.forEach(maquinas, function(v, k) {
-                trabalho += v.trabalho;
-                ocioso += v.ocioso;
-            });
-            dataarray.push([value.Linha, parseFloat(trabalho) + parseFloat(ocioso), trabalho, ocioso]);
+          var tempo = 0.0;
+          angular.forEach(dados.distribuicao, function(v, k) {
+            if(value.Linha == v.Linha) {
+              if( parseFloat( v.Fim) > tempo)
+                tempo = parseFloat(v.Fim);
+            }
+          });
+          qtd++;
+          dataarray.push([value.Linha, parseFloat(tempo)]);
         });
 
         var data = google.visualization.arrayToDataTable(dataarray);
 
         var options = {
             title: 'Gráfico: Linhas de Produção',
-            height: linhas.length * 80,
+            height: qtd * 40,
             fontName: 'Lato',
             fontSize: 12,
             legend: { position: 'top', maxLines: 3 },

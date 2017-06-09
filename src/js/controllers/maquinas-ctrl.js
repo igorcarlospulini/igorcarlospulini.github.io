@@ -22,30 +22,22 @@ function desenharMaquinas(dados) {
 
     function drawChart() {
 
-        var dataarray = [['Utilização', 'Ocupado', 'Ocioso']];
+        var dataarray = [['Utilização', 'Tempo']];
         var qtd = 0;
 
         angular.forEach(dados.recursos, function(v, k) {
 
             var recurso = v.Recurso;
-            var linha = "";
             var trabalho = 0;
-            var ocioso = 0;
-            var fim = 0;
 
             angular.forEach(dados.distribuicao, function(value,key) {
                 if (value.Recurso == recurso) {
-                    if(linha == value.Linha && fim != parseFloat(value.Inicio))
-                    ocioso += (parseFloat(value.Inicio) - fim) * value.QtdeRecurso;
-
-                    trabalho += (parseFloat(value.Fim) - parseFloat(value.Inicio)) * parseFloat(value.QtdeRecurso);
-                    fim = parseFloat(value.Fim);
-                    linha = value.Linha;
+                      trabalho += parseFloat(value.Tempo);
                 }
             });
 
-            if(trabalho > 0 || ocioso > 0) {
-                dataarray.push([recurso, trabalho, ocioso]);
+            if(trabalho > 0) {
+                dataarray.push([recurso, trabalho]);
                 qtd++;
             }
         });
