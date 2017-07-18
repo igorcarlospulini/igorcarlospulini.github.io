@@ -10,23 +10,65 @@ function OperadorCtrl($scope, DataService) {
 
       $scope.dados = DataService.getItem();
 
-      $scope.changedValue = function (id){
-          desenharTimelineLinha(id, $scope.dados);
-          desenharTimelineOperador(id, $scope.dados);
-      }
   });
 
+  $scope.changedValue = function (id){
+      desenharTimelineLinha(id, $scope.dados);
+      desenharTimelineOperador(id, $scope.dados);
+  }
+
+  $scope.baixarTimeline = function() {
+    html2canvas(document.getElementById('timeline-chart-linha'), {
+        onrendered: function (canvas) {
+            var myImage = canvas.toDataURL("image/png");
+            //create your own dialog with warning before saving file
+            //beforeDownloadReadMessage();
+            //Then download file
+            downloadURI("data:" + myImage, "yourImage.png");
+        }
+    });
+  };
+
+  $scope.baixarOperador = function() {
+    html2canvas(document.getElementById('timeline-chart-operador'), {
+        onrendered: function (canvas) {
+            var myImage = canvas.toDataURL("image/png");
+            //create your own dialog with warning before saving file
+            //beforeDownloadReadMessage();
+            //Then download file
+            downloadURI("data:" + myImage, "yourImage.png");
+        }
+    });
+  };
+}
+
+function downloadURI(uri, name) {
+    var link = document.createElement("a");
+
+    link.download = name;
+    link.href = uri;
+    document.body.appendChild(link);
+    link.click();
+    //after creating link you should delete dynamic link
+    //clearDynamicLink(link);
+}
+
+function convertImageToCanvas(image) {
+	var canvas = document.createElement("canvas");
+	canvas.width = image.width;
+	canvas.height = image.height;
+	canvas.getContext("2d").drawImage(image, 0, 0);
+
+	return canvas;
 }
 
 function desenharTimelineOperador(idLinha, dados) {
 
-  google.charts.load("current", {packages:["timeline"], 'callback': drawTimeline});
+  google.charts.load("current", {packages:["timeline"]});
   google.charts.setOnLoadCallback(drawTimeline);
 
   function drawTimeline() {
 
-      var container = document.getElementById('timeline-chart-operador');
-      var material = new google.visualization.Timeline(container);
       var dataTable = new google.visualization.DataTable();
 
       dataTable.addColumn({ type: 'string', id: 'Máquina' });
@@ -58,7 +100,10 @@ function desenharTimelineOperador(idLinha, dados) {
           }
       };
 
-      material.draw(dataTable, options);
+      var chart_div = document.getElementById('timeline-chart-operador');
+      var chart = new google.visualization.Timeline(chart_div);
+
+      chart.draw(dataTable, options);
   }
 
 }
@@ -67,13 +112,11 @@ function desenharTimelineOperador(idLinha, dados) {
 
 function desenharTimelineLinha(idLinha, dados) {
 
-    google.charts.load("current", {packages:["timeline"], 'callback': drawTimeline});
+    google.charts.load("current", {packages:["timeline"]});
     google.charts.setOnLoadCallback(drawTimeline);
 
     function drawTimeline() {
 
-        var container = document.getElementById('timeline-chart-linha');
-        var material = new google.visualization.Timeline(container);
         var dataTable = new google.visualization.DataTable();
 
         dataTable.addColumn({ type: 'string', id: 'Máquina' });
@@ -105,6 +148,8 @@ function desenharTimelineLinha(idLinha, dados) {
             }
         };
 
-        material.draw(dataTable, options);
+        var chart_div = document.getElementById('timeline-chart-linha');
+        var chart = new google.visualization.Timeline(chart_div);
+        chart.draw(dataTable, options);
     }
 }

@@ -1,1 +1,2 @@
-angular.module('RDash', ['ui.bootstrap', 'ui.router', 'ngCookies', 'xlsx-model', 'file-model', 'angular.filter']);
+angular.module('RDash', ['ui.bootstrap', 'ui.router',
+'ngCookies', 'xlsx-model', 'file-model', 'angular.filter']);

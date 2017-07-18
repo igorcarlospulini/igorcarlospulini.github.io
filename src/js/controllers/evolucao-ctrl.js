@@ -45,8 +45,13 @@ function desenharEvolucao(value, name) {
             }
         };
 
-        var chart = new google.visualization.LineChart(document.getElementById('chart-'+name));
+        var chart_div = document.getElementById('chart-' + name);
+        var chart = new google.visualization.LineChart(chart_div);
+        google.visualization.events.addListener(chart, 'ready', function () {
+          document.getElementById('png-' + name).outerHTML =
+          '<a target="_blank" href="' + chart.getImageURI() + '">Baixar Gráfico</a>';
+        });
         chart.draw(data, options);
-        
+
     }
 }

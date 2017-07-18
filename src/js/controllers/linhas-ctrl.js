@@ -58,7 +58,12 @@ function desenharLinhas(dados) {
             chartArea: {height: '95%', width: '80%'}
         };
 
-        var chart = new google.visualization.BarChart(document.getElementById('chart'));
+        var chart_div = document.getElementById('chart');
+        var chart = new google.visualization.BarChart(chart_div);
+        google.visualization.events.addListener(chart, 'ready', function () {
+          document.getElementById('png').outerHTML =
+          '<a target="_blank" href="' + chart.getImageURI() + '">Baixar Gráfico</a>';
+        });
         chart.draw(data, options);
     }
 }
