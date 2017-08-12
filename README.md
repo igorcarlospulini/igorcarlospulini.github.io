@@ -1,5 +1,5 @@
 # SISTEMA PARA SEQUENCIAMENTO E BALANCEAMENTO DE TAREFAS EM LINHAS SERIAIS COM MULTIMODELOS.
-## Autores: PULINI, IGOR CARLOS; RODRIGUES, MAYKE
+## Autores: PULINI, IGOR CARLOS; RODRIGUES, MAYKEL
 
 O setor de confecções brasileiro vem sofrendo constantes modificações nas últimas décadas, influência do mercado externo e concorrência de produtos industrializados em países asiáticos, em especial na China. O governo chinês subsidia parte da produção industrial de forma a garantir empregos em seu país, possibilitando um baixo custo de produção para sua indústria e, por consequência, destaque no mercado internacional.
 
@@ -13,4 +13,4 @@ A proposta da pesquisa é fortalecer o polo de confecções noroeste do Espírit
 
 ## Aplicativos
 * [Visualizador Web](https://igorcarlospulini.github.io/dist) 
-* [Aplicativo Desktp](https://www.dropbox.com/sh/hhh43mul13pbluu/AAD0w4Ng_b84pALUR5DfJnO-a?dl=0)
+* [Aplicativo Desktop](https://www.dropbox.com/sh/hhh43mul13pbluu/AAD0w4Ng_b84pALUR5DfJnO-a?dl=0)
