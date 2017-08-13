@@ -14,3 +14,8 @@ A proposta da pesquisa é fortalecer o polo de confecções noroeste do Espírit
 ## Aplicativos
 * [Visualizador Web](https://igorcarlospulini.github.io/dist) 
 * [Aplicativo Desktop](https://www.dropbox.com/sh/hhh43mul13pbluu/AAD0w4Ng_b84pALUR5DfJnO-a?dl=0)
+
+## Testes
+No [link](https://www.dropbox.com/sh/hhh43mul13pbluu/AAD0w4Ng_b84pALUR5DfJnO-a?dl=0) encontra-se o executável do algoritmo, juntamente com uma panilha de exemplo, com os dados de entrada. A panilha de entrada pode ser alterada de acordo com os dados da confecção, porém deve-se manter o padrão de nomenclatura dos cabeçalhos.
+
+Após a finalização do algoritmo, uma planilha com os dados de saída será gerada. Essa planilha poderá ser visualizada no aplicativo web, que mostrará as informações básicas geradas pelo processo de sequenciamento e balanceamento.
