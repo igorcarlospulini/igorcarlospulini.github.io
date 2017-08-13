@@ -16,6 +16,10 @@ A proposta da pesquisa é fortalecer o polo de confecções noroeste do Espírit
 * [Aplicativo Desktop](https://www.dropbox.com/sh/hhh43mul13pbluu/AAD0w4Ng_b84pALUR5DfJnO-a?dl=0)
 
 ## Testes
-No [link](https://www.dropbox.com/sh/hhh43mul13pbluu/AAD0w4Ng_b84pALUR5DfJnO-a?dl=0) encontra-se o executável do algoritmo, juntamente com uma panilha de exemplo, com os dados de entrada. A panilha de entrada pode ser alterada de acordo com os dados da confecção, porém deve-se manter o padrão de nomenclatura dos cabeçalhos.
+No [link](https://www.dropbox.com/sh/hhh43mul13pbluu/AAD0w4Ng_b84pALUR5DfJnO-a?dl=0) encontra-se o executável do algoritmo, juntamente com uma panilha de exemplo, com os dados de entrada e saída. 
+
+Os dados de entrada são informações referentes a infraestrutura das linhas de produção, isso inclúi recursos físicos e humanos, e ordens de produção. As inforamações devem ser extraídas do cenário o qual deseja-se efetuar o balanceamento e sequenciamento da produção.
+
+A entrada deverá ser inseriada/organizada em uma planilha, como segue no link disponibilizado, dividas por categorias ou páginas, tais como: Recursos, Linhas de Produção, Recursos da Linha de Produção, Ordem de Produção ou Jobs, Tarefas, Operações e Operações Precedentes. A panilha de entrada pode ser alterada de acordo com os dados da confecção, porém deve-se manter o padrão de nomenclatura dos cabeçalhos.
 
 Após a finalização do algoritmo, uma planilha com os dados de saída será gerada. Essa planilha poderá ser visualizada no aplicativo web, que mostrará as informações básicas geradas pelo processo de sequenciamento e balanceamento.
