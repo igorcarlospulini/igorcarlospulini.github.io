@@ -9,7 +9,7 @@ Diante destes desafios, impostos pelo sistema econômico vigente, intensificam-s
 
 A proposta da pesquisa é fortalecer o polo de confecções noroeste do Espírito Santo, fornecendo um sistema que permita executar o sequenciamento e balanceamento das ordens de produção em uma indústria de confecções. Este sistema É fornecido gratuitamente as empresas de confecção e é flexível o suficiente para se adaptar as necessidades de pequenas, médias e grandes empresas de confecção, com produção própria ou prestadoras de serviços.
 
-![Método Proposto](https://ibb.co/iTGuev)
+![Método Proposto](https://www.dropbox.com/sh/hhh43mul13pbluu/AAD0w4Ng_b84pALUR5DfJnO-a?dl=0&preview=metodo.png)
 
 ## Aplicativos
 * [Visualizador Web](https://igorcarlospulini.github.io/dist) 
