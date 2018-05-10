@@ -17,29 +17,6 @@ function OperadorCtrl($scope, DataService) {
       desenharTimelineOperador(id, $scope.dados);
   }
 
-  $scope.baixarTimeline = function() {
-    html2canvas(document.getElementById('timeline-chart-linha'), {
-        onrendered: function (canvas) {
-            var myImage = canvas.toDataURL("image/png");
-            //create your own dialog with warning before saving file
-            //beforeDownloadReadMessage();
-            //Then download file
-            downloadURI("data:" + myImage, "yourImage.png");
-        }
-    });
-  };
-
-  $scope.baixarOperador = function() {
-    html2canvas(document.getElementById('timeline-chart-operador'), {
-        onrendered: function (canvas) {
-            var myImage = canvas.toDataURL("image/png");
-            //create your own dialog with warning before saving file
-            //beforeDownloadReadMessage();
-            //Then download file
-            downloadURI("data:" + myImage, "yourImage.png");
-        }
-    });
-  };
 }
 
 function downloadURI(uri, name) {
@@ -121,18 +98,22 @@ function desenharTimelineLinha(idLinha, dados) {
 
         dataTable.addColumn({ type: 'string', id: 'Máquina' });
         dataTable.addColumn({ type: 'string', id: 'Job' });
-        dataTable.addColumn({ type: 'string', role: 'Tarefa' });
+        dataTable.addColumn({ type: 'string', role: 'tooltip' });
         dataTable.addColumn({ type: 'date', id: 'Início' });
         dataTable.addColumn({ type: 'date', id: 'Fim' });
 
+
         angular.forEach(dados.distribuicao, function(value, key) {
-            if (value.Linha == idLinha)
+            if (value.Linha == idLinha){
+            var aux = 'Ordem ' +value.Ordem + '.' + value.IdOperacao;
+
             dataTable.addRow([
                 value.Operador + " : " + value.Recurso,
-                'Job ' + value.Job,
-                'Tarefa ' + value.Tarefa,
+                'Ordem ' + value.Ordem,
+                aux,
                 new Date(0,0,0,0,value.Inicio, 0),
                 new Date(0,0,0,0,value.Fim, 0)]);
+            }
         });
 
         var qtd = uniqueArrayValue(dados.distribuicao, 'Linha', idLinha, 'Recurso');
