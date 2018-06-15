@@ -56,7 +56,7 @@ function desenharTimelineOperador(idLinha, dados) {
 
       angular.forEach(dados.distribuicao, function(value, key) {
           if (value.Linha == idLinha) {
-            var aux = 'Ordem ' +value.Ordem + '.' + value.IdOperacao;
+            var aux = 'Ordem:' +value.Ordem + ' Operação:' + value.IdOperacao;
             dataTable.addRow([
                 value.Operador ,
                 'Job ' + value.Job,
@@ -107,7 +107,7 @@ function desenharTimelineLinha(idLinha, dados) {
 
         angular.forEach(dados.distribuicao, function(value, key) {
             if (value.Linha == idLinha){
-            var aux = 'Ordem ' +value.Ordem + '.' + value.IdOperacao;
+            var aux = 'Ordem:' + value.Ordem + ' Operação:' + value.IdOperacao;
 
             dataTable.addRow([
                 value.Operador + " : " + value.Recurso,
