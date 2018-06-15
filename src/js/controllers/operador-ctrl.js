@@ -50,18 +50,20 @@ function desenharTimelineOperador(idLinha, dados) {
 
       dataTable.addColumn({ type: 'string', id: 'Máquina' });
       dataTable.addColumn({ type: 'string', id: 'Job' });
-      dataTable.addColumn({ type: 'string', role: 'Tarefa' });
+      dataTable.addColumn({ type: 'string', role: 'tooltip' });
       dataTable.addColumn({ type: 'date', id: 'Início' });
       dataTable.addColumn({ type: 'date', id: 'Fim' });
 
       angular.forEach(dados.distribuicao, function(value, key) {
-          if (value.Linha == idLinha)
+          if (value.Linha == idLinha) {
+            var aux = 'Ordem ' +value.Ordem + '.' + value.IdOperacao;
             dataTable.addRow([
                 value.Operador ,
                 'Job ' + value.Job,
-                'Tarefa ' + value.Tarefa,
+                aux,
                 new Date(0,0,0,0,value.Inicio, 0),
                 new Date(0,0,0,0,value.Fim, 0)]);
+		  }
       });
 
       var qtd = uniqueArrayValue(dados.distribuicao, 'Linha', idLinha, 'Recurso');
