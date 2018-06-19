@@ -1,11 +1,15 @@
-# SISTEMA PARA SEQUENCIAMENTO E BALANCEAMENTO DE TAREFAS EM LINHAS SERIAIS COM MULTIMODELOS.
-## Autores: PULINI, IGOR CARLOS; RODRIGUES, MAYKEL
+# SISTEMÁTICA PARA SEQUENCIAMENTO E BALANCEAMENTO DE LOTES EM MÚLTIPLAS LINHAS DE PRODUÇÃO
+## IGOR CARLOS PULINI
+## MAYKEL RODRIGUES
+## MICHEL JOSÉ ANZANELLO
 
-O setor de confecções brasileiro vem sofrendo constantes modificações nas últimas décadas, influência do mercado externo e concorrência de produtos industrializados em países asiáticos, em especial na China. O governo chinês subsidia parte da produção industrial de forma a garantir empregos em seu país, possibilitando um baixo custo de produção para sua indústria e, por consequência, destaque no mercado internacional.
 
-Para o setor de confecções brasileiro está concorrência influencia diretamente na sua organização industrial, demandando melhorias que possibilitem uma ampliação de sua competitividade. Empreendimentos de confecções no Brasil são forçados a lançar no mínimo quatro coleções anuais, cada uma delas com um mix de produtos que varia entre 200 e 600 produtos, dependendo do tamanho da empresa. Tal estratégia exige uma completa reestruturação dos processos produtivos, desde a pesquisa e desenvolvimento da coleção até a produção e expedição do produto acabado. Espera-se assim fornecer ao mercado diversidade de produtos com elevado grau de qualidade, baixo custo e ciclos de vida menores, ampliando a atratividade dos produtos nacionais frente à concorrência internacional.
-
-Diante destes desafios, impostos pelo sistema econômico vigente, intensificam-se nas empresas, bem como na academia, buscas por melhorias que possibilitem à criação de diferenciais competitivos de mercado à indústria de confecções. As atuais características de mercado impulsionam as empresas nacionais ao aperfeiçoamento de seus processos de cronoanálise, formação de preços, sequenciamento e balanceamento de layouts produtivo com o intuito de se adaptar de forma rápida às exigências do mercado do vestuário.
+Este trabalho apresenta uma solução integrada para terceirização parcial da produção sobre um horizonte de programação, na qual são necessárias a alocação, sequenciamento e balanceamento de lotes entre múltiplas linhas de produção com operadores polivalentes. O trabalho foi testado com sucesso no setor do vestuário e contempla as seguintes decisões, dado um conjunto de lotes e um horizonte de programação:
+  1.  A sistemática seleciona a linha de produção (interna ou terceirizada) que irá processar cada lote. 
+  2.	Dado o horizonte de programação, a solução preenche completamente as linhas produção internas, enquanto o excedente da capacidade       interna é enviado para empresas terceirizadas.
+  3.	Os lotes são priorizados em relação a entrega dos pedidos, o número de clientes atendidos e volume de entrega.
+  4.	A sistemática define quais máquinas cada operador vai manipular e quais tarefas deve executar, respeitando a precedência das      operações e de forma balanceada. A distribuição considera a possibilidade de existir mais máquinas disponíveis em cada linha de produção, podendo um operador manipular mais de uma máquina.
+O trabalho pode ser aplicado em qualquer empresa que se enquadre nestas características seguindo os passos definidos na Figura. Na etapa 1 uma planilha de entrada descrevendo a estrutura das linhas, recursos, operadores e lotes de produção é submetida ao algoritmo. Esta planilha de entrada deve ser criada conforme modelo disponível abaixo.
 
 A proposta da pesquisa é fortalecer o polo de confecções noroeste do Espírito Santo, fornecendo um sistema que permita executar o sequenciamento e balanceamento das ordens de produção em uma indústria de confecções. Este sistema É fornecido gratuitamente as empresas de confecção e é flexível o suficiente para se adaptar as necessidades de pequenas, médias e grandes empresas de confecção, com produção própria ou prestadoras de serviços.
 
