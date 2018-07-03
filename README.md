@@ -16,7 +16,7 @@
 
   +	A sistemática define quais máquinas cada operador vai manipular e quais tarefas deve executar, respeitando a precedência das      operações e de forma balanceada. A distribuição considera a possibilidade de existir mais máquinas disponíveis em cada linha de produção, podendo um operador manipular mais de uma máquina.
 <br />
-O trabalho pode ser aplicado em qualquer empresa que se enquadre nestas características seguindo os passos definidos na Figura e descritos a seguir:
+O trabalho pode ser aplicado em qualquer indústria com as características, seguindo os passos exibidos na Figura abaixo e descritos a seguir:
 
 + **Etapa 1** - Uma planilha de entrada descrevendo a estrutura das linhas, recursos, operadores e lotes de produção é submetida ao algoritmo que distribui as tarefas dos lotes entre os operadores das linhas de produção.
 
@@ -32,11 +32,13 @@ O trabalho pode ser aplicado em qualquer empresa que se enquadre nestas caracter
 * [Framework Web](https://igorcarlospulini.github.io/dist) 
 * [Ferramenta de Otimização](https://www.dropbox.com/s/47i1xeaqjzj0xrd/NSGA.zip?dl=0)
 
-<br />
+
+
 ## Entrada de Dados 
 * [Modelo Planilha Entrada](https://www.dropbox.com/s/o6vdqhi9obwdmes/Modelo%20Arquivo%20de%20Entrada.xlsx?dl=0)
 * [Exemplo Planilha Entrada](https://www.dropbox.com/s/54ufpamgxg3x4ai/Exemplo%20Planilha%20Entrada.xls?dl=0)
-<br />
+
+
 ## Resultados 
 * [Modelo Planilha Saída](https://www.dropbox.com/s/eo9cwg8ezfi3jy5/Modelo%20Arquivo%20Sa%C3%ADda.xlsx?dl=0)
 * [Exemplo Planilha Saída](https://www.dropbox.com/s/4gt932czzb7ie7r/Exemplo%20Planilha%20Saida.xls?dl=0)
