@@ -22,7 +22,7 @@ O trabalho pode ser aplicado em qualquer empresa que se enquadre nestas caracter
 
 ## Aplicativos
 * [Visualizador Web](https://igorcarlospulini.github.io/dist) 
-* [Algoritmo Otimização](https://www.dropbox.com/s/a4i9nfz9yyaisvv/NSGA.exe?dl=0)
+* [Algoritmo Otimização](https://www.dropbox.com/s/47i1xeaqjzj0xrd/NSGA.zip?dl=0)
 
 
 ## Entrada de Dados 
