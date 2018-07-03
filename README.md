@@ -14,10 +14,7 @@
 
   +	A sistemática define quais máquinas cada operador vai manipular e quais tarefas deve executar, respeitando a precedência das      operações e de forma balanceada. A distribuição considera a possibilidade de existir mais máquinas disponíveis em cada linha de produção, podendo um operador manipular mais de uma máquina.
 
-O trabalho pode ser aplicado em qualquer empresa que se enquadre nestas características seguindo os passos definidos na Figura. Na etapa 1 uma planilha de entrada descrevendo a estrutura das linhas, recursos, operadores e lotes de produção é submetida ao algoritmo. Esta planilha de entrada deve ser criada conforme este modelo *[Planilha de Entrada](/Entrada.xls).
-
-O objetivo da pesquisa é fortalecer o polo de confecções noroeste do Espírito Santo, fornecendo o método e as ferramentas necessárias para executar o sequenciamento e balanceamento das ordens de produção em uma indústria de confecções. As ferramentas estão disponíveis gratuitamente e podem ser utilizadas por empresas e estudantes.
-
+O trabalho pode ser aplicado em qualquer empresa que se enquadre nestas características seguindo os passos definidos na Figura. Na etapa 1 uma planilha de entrada descrevendo a estrutura das linhas, recursos, operadores e lotes de produção é submetida ao algoritmo. Esta planilha de entrada deve ser criada conforme este modelo *[Planilha de Entrada](/Entrada.xls)*/. Na etapa 2, os resultados obtidos no algoritmo são encaminhados para o framework que permite analisar e aplicar os resultados no chão de fábrica. 
 
 
 
@@ -25,13 +22,16 @@ O objetivo da pesquisa é fortalecer o polo de confecções noroeste do Espírit
 
 ## Aplicativos
 * [Visualizador Web](https://igorcarlospulini.github.io/dist) 
-* [Aplicativo Desktop](https://www.dropbox.com/sh/hhh43mul13pbluu/AAD0w4Ng_b84pALUR5DfJnO-a?dl=0)
+* [Algoritmo Otimização](/NSGA.ZIP)
 
-## Testes
-No [link](https://www.dropbox.com/sh/hhh43mul13pbluu/AAD0w4Ng_b84pALUR5DfJnO-a?dl=0) encontra-se o executável do algoritmo, juntamente com uma panilha de exemplo, com os dados de entrada e saída. 
 
-Os dados de entrada são informações referentes a infraestrutura das linhas de produção, isso inclúi recursos físicos e humanos, e ordens de produção. As inforamações devem ser extraídas do cenário o qual deseja-se efetuar o balanceamento e sequenciamento da produção.
+## Entrada de Dados 
+* [Modelo Planilha Entrada](/Entrada.xls)
+* [Exemplo Planilha Entrada](/ModEntrada.xls)
 
-A entrada deverá ser inseriada/organizada em uma planilha, como segue no link disponibilizado, dividas por categorias ou páginas, tais como: Recursos, Linhas de Produção, Recursos da Linha de Produção, Ordem de Produção ou Jobs, Tarefas, Operações e Operações Precedentes. A panilha de entrada pode ser alterada de acordo com os dados da confecção, porém deve-se manter o padrão de nomenclatura dos cabeçalhos.
+## Resultados de Saída 
+* [Modelo Planilha Saída](/Entrada.xls)
+* [Exemplo Planilha Saída](/Saida.xls)
 
-Após a finalização do algoritmo, uma planilha com os dados de saída será gerada. Essa planilha poderá ser visualizada no aplicativo web, que mostrará as informações básicas geradas pelo processo de sequenciamento e balanceamento.
+
+O objetivo da pesquisa é fortalecer o polo de confecções noroeste do Espírito Santo, fornecendo o método e as ferramentas necessárias para executar o sequenciamento e balanceamento das ordens de produção em uma indústria de confecções. As ferramentas estão disponíveis gratuitamente e podem ser utilizadas por empresas e estudantes.
