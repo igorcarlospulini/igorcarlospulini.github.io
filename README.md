@@ -17,16 +17,17 @@
   +	A sistemática define quais máquinas cada operador vai manipular e quais tarefas deve executar, respeitando a precedência das      operações e de forma balanceada. A distribuição considera a possibilidade de existir mais máquinas disponíveis em cada linha de produção, podendo um operador manipular mais de uma máquina.
 <br />
 
-O trabalho pode ser aplicado em qualquer indústria com as características, seguindo os passos exibidos na Figura abaixo e descritos a seguir:
+O trabalho pode ser aplicado em qualquer indústria seguindo os passos exibidos na Figura.
+<br/><br/>
+![Passos para Utilização](/FIGURA1.png)
++ **Passo 1** - Uma planilha de entrada descrevendo a estrutura das linhas, recursos, operadores e lotes de produção é submetida ao algoritmo que distribui as tarefas dos lotes entre os operadores das linhas de produção.
 
-+ **Etapa 1** - Uma planilha de entrada descrevendo a estrutura das linhas, recursos, operadores e lotes de produção é submetida ao algoritmo que distribui as tarefas dos lotes entre os operadores das linhas de produção.
++ **Passo 2** - O algoritmo devolve como resultado uma planilha descrevendo a distribuição dos lotes efetuada. 
 
-+ **Etapa 2** - O algoritmo devolve como resultado uma planilha descrevendo a distribuição dos lotes efetuada. 
-
-+ **Etapa 3** - A planilha de saída é submetida framework que permite analisar e aplicar os resultados no chão de fábrica. 
++ **Passo 3** - A planilha de saída é submetida framework que permite analisar e aplicar os resultados no chão de fábrica. 
 <br/><br/>
 
-![Passos para Utilização](/FIGURA1.png)
+
 <br/><br/>
 ## Ferramentas
 * [Framework Web](https://igorcarlospulini.github.io/dist) 
