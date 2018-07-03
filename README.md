@@ -22,7 +22,7 @@ O trabalho pode ser aplicado em qualquer empresa que se enquadre nestas caracter
 ![Passos para Utilização](/FIGURA1.png)
 
 ## Ferramentas
-* [Visualizador Web](https://igorcarlospulini.github.io/dist) 
+* [Framework Web](https://igorcarlospulini.github.io/dist) 
 * [Ferramenta de Otimização](https://www.dropbox.com/s/47i1xeaqjzj0xrd/NSGA.zip?dl=0)
 
 
