@@ -21,18 +21,18 @@ O trabalho pode ser aplicado em qualquer empresa que se enquadre nestas caracter
 
 ![Passos para Utilização](/FIGURA1.png)
 
-## Aplicativos
+## Ferramentas
 * [Visualizador Web](https://igorcarlospulini.github.io/dist) 
-* [Algoritmo Otimização](https://www.dropbox.com/s/47i1xeaqjzj0xrd/NSGA.zip?dl=0)
+* [Ferramenta de Otimização](https://www.dropbox.com/s/47i1xeaqjzj0xrd/NSGA.zip?dl=0)
 
 
 ## Entrada de Dados 
-* [Modelo Planilha Entrada](/Entrada.xls)
-* [Exemplo Planilha Entrada](/ModEntrada.xls)
+* [Modelo Planilha Entrada](https://www.dropbox.com/s/o6vdqhi9obwdmes/Modelo%20Arquivo%20de%20Entrada.xlsx?dl=0)
+* [Exemplo Planilha Entrada](https://www.dropbox.com/s/54ufpamgxg3x4ai/Exemplo%20Planilha%20Entrada.xls?dl=0)
 
-## Resultados de Saída 
-* [Modelo Planilha Saída](/Entrada.xls)
-* [Exemplo Planilha Saída](/Saida.xls)
+## Resultados 
+* [Modelo Planilha Saída](https://www.dropbox.com/s/eo9cwg8ezfi3jy5/Modelo%20Arquivo%20Sa%C3%ADda.xlsx?dl=0)
+* [Exemplo Planilha Saída](https://www.dropbox.com/s/4gt932czzb7ie7r/Exemplo%20Planilha%20Saida.xls?dl=0)
 
 
 
