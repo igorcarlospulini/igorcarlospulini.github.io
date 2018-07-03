@@ -4,11 +4,12 @@
 ## MICHEL JOSÉ ANZANELLO
 
 
-<br />Este trabalho apresenta uma solução integrada para terceirização parcial da produção sobre um horizonte de programação, na qual são necessárias a alocação, sequenciamento e balanceamento de lotes entre múltiplas linhas de produção com operadores polivalentes. O trabalho foi testado com sucesso no setor do vestuário e contempla as seguintes decisões, dado um conjunto de lotes e um horizonte de programação:<br />
+
+<br />O objetivo da pesquisa é fortalecer o polo de confecções noroeste do Espírito Santo, fornecendo uma solução integrada para terceirização parcial da produção sobre um horizonte de programação, na qual são necessárias a alocação, sequenciamento e balanceamento de lotes entre múltiplas linhas de produção com operadores polivalentes. O trabalho foi testado com sucesso no setor do vestuário e contempla as seguintes decisões, dado um conjunto de lotes e um horizonte de programação:<br />
   
-  + A sistemática seleciona a linha de produção (interna ou terceirizada) que irá processar cada lote. 
+  + Seleciona a linha de produção (interna ou terceirizada) que irá processar cada lote. 
   
-  + Dado o horizonte de programação, a solução preenche completamente as linhas produção internas, enquanto o excedente da capacidade       interna é enviado para empresas terceirizadas.
+  + Em um horizonte de programação, a solução preenche completamente as linhas produção internas, enquanto o excedente da capacidade       interna é enviado para empresas terceirizadas.
  
   +	Os lotes são priorizados em relação a entrega dos pedidos, o número de clientes atendidos e volume de entrega.
 
@@ -34,4 +35,4 @@ O trabalho pode ser aplicado em qualquer empresa que se enquadre nestas caracter
 * [Exemplo Planilha Saída](/Saida.xls)
 
 
-O objetivo da pesquisa é fortalecer o polo de confecções noroeste do Espírito Santo, fornecendo o método e as ferramentas necessárias para executar o sequenciamento e balanceamento das ordens de produção em uma indústria de confecções. As ferramentas estão disponíveis gratuitamente e podem ser utilizadas por empresas e estudantes.
+
