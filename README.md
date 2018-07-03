@@ -14,9 +14,10 @@
 
   +	A sistemática define quais máquinas cada operador vai manipular e quais tarefas deve executar, respeitando a precedência das      operações e de forma balanceada. A distribuição considera a possibilidade de existir mais máquinas disponíveis em cada linha de produção, podendo um operador manipular mais de uma máquina.
 
-O trabalho pode ser aplicado em qualquer empresa que se enquadre nestas características seguindo os passos definidos na Figura. Na etapa 1 uma planilha de entrada descrevendo a estrutura das linhas, recursos, operadores e lotes de produção é submetida ao algoritmo. Esta planilha de entrada deve ser criada conforme modelo disponível abaixo.
+O trabalho pode ser aplicado em qualquer empresa que se enquadre nestas características seguindo os passos definidos na Figura. Na etapa 1 uma planilha de entrada descrevendo a estrutura das linhas, recursos, operadores e lotes de produção é submetida ao algoritmo. Esta planilha de entrada deve ser criada conforme este modelo *[Planilha de Entrada](/Entrada.xls).
 
-A proposta da pesquisa é fortalecer o polo de confecções noroeste do Espírito Santo, fornecendo um sistema que permita executar o sequenciamento e balanceamento das ordens de produção em uma indústria de confecções. Este sistema É fornecido gratuitamente as empresas de confecção e é flexível o suficiente para se adaptar as necessidades de pequenas, médias e grandes empresas de confecção, com produção própria ou prestadoras de serviços.
+O objetivo da pesquisa é fortalecer o polo de confecções noroeste do Espírito Santo, fornecendo o método e as ferramentas necessárias para executar o sequenciamento e balanceamento das ordens de produção em uma indústria de confecções. As ferramentas estão disponíveis gratuitamente e podem ser utilizadas por empresas e estudantes.
+
 
 
 
