@@ -1,12 +1,12 @@
 # SISTEMÁTICA PARA SEQUENCIAMENTO E BALANCEAMENTO DE LOTES EM MÚLTIPLAS LINHAS DE PRODUÇÃO
 
-## IGOR CARLOS PULINI
-## MAYKEL RODRIGUES
-## MICHEL JOSÉ ANZANELLO
+## IGOR CARLOS PULINI (IFES)
+## MAYKEL RODRIGUES (IFES)
+## MICHEL JOSÉ ANZANELLO (UFRGS)
 
 <br />
 
-<br />O objetivo da pesquisa é fortalecer o polo de confecções noroeste do Espírito Santo, fornecendo uma solução integrada para terceirização parcial da produção sobre um horizonte de programação, na qual são necessárias a alocação, sequenciamento e balanceamento de lotes entre múltiplas linhas de produção com operadores polivalentes. O trabalho foi testado com sucesso no setor do vestuário e contempla as seguintes decisões, dado um conjunto de lotes e um horizonte de programação:<br />
+<br />O objetivo da pesquisa é fortalecer o polo de confecções do noroeste do Espírito Santo, fornecendo uma solução integrada para terceirização parcial da produção sobre um horizonte de programação, na qual são necessárias a alocação, sequenciamento e balanceamento de lotes entre múltiplas linhas de produção com operadores polivalentes. O trabalho foi testado com sucesso no setor do vestuário e contempla as seguintes decisões, dado um conjunto de lotes e um horizonte de programação:<br />
   
   + Seleciona a linha de produção (interna ou terceirizada) que irá processar cada lote. 
   
@@ -30,17 +30,17 @@ O trabalho pode ser aplicado em qualquer indústria seguindo os passos exibidos 
 
 <br/><br/>
 ## Ferramentas
-* [Framework Web](https://igorcarlospulini.github.io/dist) 
+* [Framework Visualizador](https://igorcarlospulini.github.io/dist) 
 * [Ferramenta de Otimização](https://www.dropbox.com/s/47i1xeaqjzj0xrd/NSGA.zip?dl=0)
 
 
 
-## Entrada de Dados 
+## Planilha de Entrada 
 * [Modelo Planilha Entrada](https://www.dropbox.com/s/o6vdqhi9obwdmes/Modelo%20Arquivo%20de%20Entrada.xlsx?dl=0)
 * [Exemplo Planilha Entrada](https://www.dropbox.com/s/54ufpamgxg3x4ai/Exemplo%20Planilha%20Entrada.xls?dl=0)
 
 
-## Resultados 
+## Planilha de Resultados 
 * [Modelo Planilha Saída](https://www.dropbox.com/s/eo9cwg8ezfi3jy5/Modelo%20Arquivo%20Sa%C3%ADda.xlsx?dl=0)
 * [Exemplo Planilha Saída](https://www.dropbox.com/s/4gt932czzb7ie7r/Exemplo%20Planilha%20Saida.xls?dl=0)
 
