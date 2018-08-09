@@ -6,6 +6,10 @@
 
 <br />
 
+* [Apresentação do Problema](https://youtu.be/cR1AG3cK8qU)
+
+<br />
+
 <br />O objetivo da pesquisa é fortalecer o polo de confecções do noroeste do Espírito Santo, fornecendo uma solução integrada para terceirização parcial da produção sobre um horizonte de programação, na qual são necessárias a alocação, sequenciamento e balanceamento de lotes entre múltiplas linhas de produção com operadores polivalentes. O trabalho foi testado com sucesso no setor do vestuário e contempla as seguintes decisões, dado um conjunto de lotes e um horizonte de programação:<br />
   
   + Seleciona a linha de produção (interna ou terceirizada) que irá processar cada lote. 
